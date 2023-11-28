@@ -11,10 +11,15 @@ public class IntervaloNumeros {
 		System.out.println("Introduzca el número más bajo");
 		int numeroBajo = Integer.parseInt(sc.nextLine());
 		System.out.println("Introduzca el número más alto");
-		int numeroAlto = Integer.parseInt(sc.nextLine());
+		int numeroAlto = Integer.parseInt(sc.nextLine());		
+		System.out.println("Introduzca un tercer número");
+		int numeroExtra = Integer.parseInt(sc.nextLine());
 		
 		for (int i = numeroBajo; i < numeroAlto; i+=7) {
 			System.out.println(i);
+			if (numeroExtra > numeroBajo && numeroExtra < numeroAlto) {
+				System.out.println(numeroExtra);
+			}
 		}
 
 	}
